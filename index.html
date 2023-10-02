@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Em & Rem Units</title>
+  <style>
+    /* #box-1 {
+      font-size: 20px;
+    }
+
+    #box-1 p {
+      font-size: 1.5em;
+    } */
+
+    /* setting the fontsize to 20px, to put a 1.5em on it,that's 1.5 * 20... that makes the p tag 30px. */
+
+    /* ems mess with margin.. and adding padding like padding: 1em, would be based off the latest font-size... so that padding would be 30px */
+
+    /* another issue with ems are nested lists. Each nested list gets bigger cause it inherits the parent element */
+
+    html {
+      font-size: 62.5%;
+    }
+    /* This makes the fontsize more responsive to screen size */
+
+    #box-2 h3 {
+      font-size: 2rem;
+    }
+
+    #box-2 p {
+      font-size: 1.5rem;
+    }
+
+    /* This is based off the root element instead of the parent element. The default fontsize of the root is set to 16px... 2 * 16 is 32px... 1.5 * 16 is 25.6px */
+  </style>
+</head>
+<body>
+  <div id="box-1">
+    <h3>h3 is font-size 1.17</h3>
+    <p>Lorem ipsum dolor  sit amet consectetur, adipisicing elit. Quas ad nemo dolores. Illo odio quae fuga atque voluptates rem laudantium sequi vel hic fugit, voluptate, necessitatibus odit distinctio.</p>
+  </div>
+  <div id="box-2">
+    <h2>Box Two</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas ad nemo dolores. Illo odio quae fuga atque voluptates rem laudantium sequi vel hic fugit, voluptate, necessitatibus odit distinctio.</p>
+  </div>
+</body>
+</html>
